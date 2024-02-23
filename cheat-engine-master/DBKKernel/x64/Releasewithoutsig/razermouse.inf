@@ -1,0 +1,82 @@
+;
+; razermouse.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider=%ManufacturerName%
+CatalogFile=razermouse.cat
+DriverVer = 02/23/2024,3.35.51.714
+
+[DestinationDirs]
+DefaultDestDir = 12
+razermouse_Device_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+razermouse.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%razermouse.DeviceDesc%=razermouse_Device, Root\razermouse ; TODO: edit hw-id
+
+[razermouse_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+razermouse.sys
+
+;-------------- Service installation
+[razermouse_Device.NT.Services]
+AddService = razermouse,%SPSVCINST_ASSOCSERVICE%, razermouse_Service_Inst
+
+; -------------- razermouse driver install sections
+[razermouse_Service_Inst]
+DisplayName    = %razermouse.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\razermouse.sys
+
+;
+;--- razermouse_Device Coinstaller installation ------
+;
+
+[razermouse_Device.NT.CoInstallers]
+AddReg=razermouse_Device_CoInstaller_AddReg
+CopyFiles=razermouse_Device_CoInstaller_CopyFiles
+
+[razermouse_Device_CoInstaller_AddReg]
+;
+
+
+[razermouse_Device_CoInstaller_CopyFiles]
+;
+
+
+[razermouse_Device.NT.Wdf]
+KmdfService =  razermouse, razermouse_wdfsect
+[razermouse_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="razermouse" ;TODO: Replace with your manufacturer name
+ClassName="System" ; TODO: edit ClassName
+DiskName = "razermouse Installation Disk"
+razermouse.DeviceDesc = "razermouse Device"
+razermouse.SVCDESC = "razermouse Service"

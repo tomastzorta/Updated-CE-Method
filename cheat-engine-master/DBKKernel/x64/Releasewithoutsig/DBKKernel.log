@@ -1,0 +1,180 @@
+﻿  Building 'DBKKernel' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Stamping x64\Releasewithoutsig\razermouse.inf
+  Stamping [Version] section with DriverVer=02/23/2024,3.33.53.425
+C:\Users\NAT20\Desktop\Updated CE Method\cheat-engine-master\DBKKernel\razermouse.inf(5-5): warning 1324: [Version] section should specify PnpLockdown=1.
+  Assembling amd64\dbkfunca.asm...
+  Assembling amd64\debuggera.asm...
+  Assembling amd64\noexceptionsa.asm...
+  Assembling amd64\ultimapa.asm...
+  Assembling amd64\vmxhelpera.asm...
+  Assembling amd64\vmxoffloada.asm...
+  DBKDrvr.c
+  DBKFunc.c
+  debugger.c
+  deepkernel.c
+  interruptHook.c
+  IOPLDispatcher.c
+  memscan.c
+  noexceptions.c
+  processlist.c
+  threads.c
+  ultimap.c
+  ultimap2.c
+  apic.c
+  vmxhelper.c
+  vmxoffload.c
+  Generating Code...
+  DBKKernel.vcxproj -> C:\Users\NAT20\Desktop\Updated CE Method\CE MOD\razermouse.sys
+  
+  The following certificates were considered:
+      Issued to: Adobe Content Certificate 10-5
+  
+      Issued by: Adobe Intermediate CA 10-3
+  
+      Expires:   Mon Aug 18 13:18:42 2025
+  
+      SHA1 hash: F0BD97B4EC6CD8B71C35631738259CF9F2E54381
+  
+  
+      Issued to: Adobe Intermediate CA 10-3
+  
+      Issued by: Adobe Root CA 10-3
+  
+      Expires:   Sat Aug 04 17:37:58 2068
+  
+      SHA1 hash: D1DF7F06B769BCCB3F4479041EC1F06E9CD3CB1A
+  
+  
+      Issued to: Adobe Intermediate CA 10-4
+  
+      Issued by: Adobe Root CA 10-3
+  
+      Expires:   Sat Aug 04 17:37:59 2068
+  
+      SHA1 hash: BF89E52F8D681360E6B84941BD2F9BC0093309F6
+  
+  
+      Issued to: WDKTestCert NAT20,133530597974949748
+  
+      Issued by: WDKTestCert NAT20,133530597974949748
+  
+      Expires:   Wed Feb 22 00:00:00 2034
+  
+      SHA1 hash: B86AE093B5E00EFF7C3C1268FE0147134E547993
+  
+  
+      Issued to: Adobe Intermediate CA 10-15
+  
+      Issued by: Adobe Root CA 10-3
+  
+      Expires:   Sat Aug 04 17:38:15 2068
+  
+      SHA1 hash: A5C8D928986EC17FCC7D5F2353885D1709B73A29
+  
+  
+      Issued to: WDKTestCert NAT20,133528611699101668
+  
+      Issued by: WDKTestCert NAT20,133528611699101668
+  
+      Expires:   Mon Feb 20 00:00:00 2034
+  
+      SHA1 hash: 9438770B2C0F15A8737D9375AF265A78B044DE16
+  
+  
+      Issued to: Adobe Content Certificate 10-6
+  
+      Issued by: Adobe Intermediate CA 10-4
+  
+      Expires:   Mon Aug 18 13:20:00 2025
+  
+      SHA1 hash: 906CC149415780CFB79F39E1CF449F87CA6D4D16
+  
+  
+      Issued to: WDKTestCert NAT20,133530586985548877
+  
+      Issued by: WDKTestCert NAT20,133530586985548877
+  
+      Expires:   Wed Feb 22 00:00:00 2034
+  
+      SHA1 hash: 8FFA6B413FAED17050FA06C37D86E5B142D4C4D0
+  
+  
+      Issued to: Adobe Intermediate CA 10-19
+  
+      Issued by: Adobe Root CA 10-3
+  
+      Expires:   Sat Aug 04 17:38:19 2068
+  
+      SHA1 hash: 85E2C5B0D9CFF505363FA62A5E8B8C1D76A60B46
+  
+  
+      Issued to: C37763AD-FA37-4448-974F-1E99842557D9
+  
+      Issued by: Apple iPhone Device CA
+  
+      Expires:   Tue Feb 04 04:37:44 2025
+  
+      SHA1 hash: 8381D188CBC575A044C7792A701B97AD5F208805
+  
+  
+      Issued to: WDKTestCert NAT20,133528611380857866
+  
+      Issued by: WDKTestCert NAT20,133528611380857866
+  
+      Expires:   Mon Feb 20 00:00:00 2034
+  
+      SHA1 hash: 6948520366EA5DC0C0EF8755133BC1D99571DA00
+  
+  
+      Issued to: Adobe Content Certificate 10-8
+  
+      Issued by: Adobe Intermediate CA 10-19
+  
+      Expires:   Mon Aug 05 15:11:25 2030
+  
+      SHA1 hash: 686DF0A4A89F7CB6BFB4D33C6A48E2EE5FB6C4FB
+  
+  
+      Issued to: Adobe Content Certificate 10-7
+  
+      Issued by: Adobe Intermediate CA 10-15
+  
+      Expires:   Mon Aug 05 13:48:41 2030
+  
+      SHA1 hash: 4C7C2E87F0BC79A039D39B05F899A1CC521FDE99
+  
+  
+      Issued to: WDKTestCert NAT20,133528611192535797
+  
+      Issued by: WDKTestCert NAT20,133528611192535797
+  
+      Expires:   Mon Feb 20 00:00:00 2034
+  
+      SHA1 hash: 1EEA19E9EB330B57822866FC3BBA2623A0A5C853
+  
+  
+  After EKU filter, 13 certs were left.
+  After expiry filter, 13 certs were left.
+  After Hash filter, 1 certs were left.
+  After Private Key filter, 1 certs were left.
+  The following certificate was selected:
+      Issued to: WDKTestCert NAT20,133528611192535797
+  
+      Issued by: WDKTestCert NAT20,133528611192535797
+  
+      Expires:   Mon Feb 20 00:00:00 2034
+  
+      SHA1 hash: 1EEA19E9EB330B57822866FC3BBA2623A0A5C853
+  
+  
+  Done Adding Additional Store
+  Successfully signed: C:\Users\NAT20\Desktop\Updated CE Method\CE MOD\razermouse.sys
+  
+  
+  Number of files successfully Signed: 1
+  
+  Number of warnings: 0
+  
+  Number of errors: 0
+  
